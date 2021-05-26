@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100vh;
+  background-color: white;
+}
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background: #18181a;
+  /* background: radial-gradient(circle, rgba(31,28,43,1) 0%, rgba(64,66,77,1) 100%); */
+}
+
+.header {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+.item {
+  display: flex;
+  align-items: center;
+}
+.header .menu {
+  height: 3rem;
+  width: 3rem;
+  background-color: inherit;
+}
+.header img {
+  height: 3rem;
+  width: 3rem;
+  padding: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+body > .cardDisplay {
+  margin-top: 10rem;
+  margin-left: 10%;
+
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border: 1px solid black;
+     */
+}
+.heading {
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  color: whitesmoke;
+}
+.cardDisplay > .card {
+ margin-top: 1rem;
+  /* opacity: 1; */
+  height: 16rem;
+  width: 20rem;
+  background: -webkit-linear-gradient(
+    top,
+    transparent,
+    rgba(200, 200, 200, 0.1),
+    transparent
+  );
+  border: 1px solid rgba(150, 150, 150, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5); */
+  border-radius: 20px;
+  border-radius: 20px;
+}
+.card > img {
+  display: block;
+  height: 10rem;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card > .title {
+  color: grey;
+  text-align: center;
+}
+.card > .information {
+  display: flex;
+  justify-content: space-between;
+}
+.card > .information > .views {
+  margin-left: 0.2rem;
+  color:grey;
+}
+.card > .information > .length {
+  margin-right: 0.2rem;
+  color:grey;
+}
